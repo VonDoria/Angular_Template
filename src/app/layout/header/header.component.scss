@@ -1,0 +1,43 @@
+header{
+  height: 5vh;
+  background-color: var(--background-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2rem;
+
+  > span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    text-align: center;
+  }
+
+  > div{
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 .8em;
+    transition: .5s;
+    border-radius: 5rem;
+    font-size: .875rem;
+
+    &:hover{
+      background-color: #00000033;
+    }
+
+    > span{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 1rem;
+
+      img{
+        border-radius: 50%;
+        width: 2rem;
+      }
+    }
+  }
+}

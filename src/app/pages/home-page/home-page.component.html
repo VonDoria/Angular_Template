@@ -1,0 +1,36 @@
+<div class="container">
+  <p>home-page works!</p>
+
+  <div class="display">
+    🧪
+    🥁
+  </div>
+
+  <div class="generator">
+    <!-- <app-button>value</app-button> -->
+    <main onsubmit="e => e.preventDefault()">
+      <div class="content">
+        <input #text id="placehouder" placeholder="Content" type="text"/>
+      </div>
+      <div class="colors">
+        <input type="radio" name="color" value="primary"/>
+        <input type="radio" name="color" value="success"/>
+        <input type="radio" name="color" value="danger"/>
+        <input type="radio" name="color" value="warning"/>
+        <input type="radio" name="color" value="info"/>
+        <label>Color</label>
+      </div>
+      <div class="slide">
+        <label>Style</label>
+      </div>
+      <div class="slide">
+        <label>Border</label>
+      </div>
+      <div>
+        <app-button>Large</app-button>
+        <app-button>Default</app-button>
+        <app-button>Small</app-button>
+      </div>
+    </main>
+  </div>
+</div>

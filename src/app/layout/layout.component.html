@@ -1,0 +1,11 @@
+<div class="appContainer">
+  <app-side-nav [style.width]="this.appService.sideNavOpen ? '18rem' : '4.5rem'" class="sideNav"></app-side-nav>
+  <aside>
+    <app-header></app-header>
+    <main>
+      <ng-content></ng-content>
+    </main>
+    <footer>
+    </footer>
+  </aside>
+</div>

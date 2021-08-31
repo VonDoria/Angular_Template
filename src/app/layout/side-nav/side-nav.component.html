@@ -1,0 +1,23 @@
+<div class="title">
+  <a routerLink="/">
+    <p [style.opacity]="appService.sideNavOpen ? '1' : '0'">
+      <mat-icon>{{ app.icon }}</mat-icon>
+      &nbsp;&nbsp;
+      {{ app.name }}
+    </p>
+  </a>
+  <span (click)="openSideBar()">
+    <mat-icon [class.left]="!appService.isSideNavOpen">chevron_left</mat-icon>
+  </span>
+</div>
+
+<ul>
+  <li *ngFor="let page of pageList">
+    <a routerLink="{{ page.linkTo }}">
+      <mat-icon>{{ page.icon }}</mat-icon>
+      <span [style.opacity]="appService.sideNavOpen ? '1' : '0'">
+        {{ page.name }}
+      </span>
+    </a>
+  </li>
+</ul>

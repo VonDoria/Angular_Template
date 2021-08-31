@@ -1,10 +1,23 @@
+import { TableComponent } from './pages/table/table.component';
+import { SelectComponent } from './pages/select/select.component';
+import { DatapickerComponent } from './pages/datapicker/datapicker.component';
+import { ButtonsComponent } from './pages/buttons/buttons.component';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+import { HomePageComponent } from './pages/home-page/home-page.component';
+
+const routes: Routes = [
+  { path: '', component: HomePageComponent },
+  { path: 'buttons', component: ButtonsComponent},
+  { path: 'datapicker', component: DatapickerComponent},
+  { path: 'table', component: TableComponent},
+  { path: 'select', component: SelectComponent},
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
+

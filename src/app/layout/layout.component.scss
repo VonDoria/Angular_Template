@@ -1,0 +1,40 @@
+
+.appContainer{
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--background);
+
+  display: flex;
+  align-items: stretch;
+
+  .sideNav{
+    background-color: var(--primary-dark);
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  > aside{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    > main{
+      flex: 1;
+    }
+
+    > footer{
+      height: 5vh;
+      background-color: var(--background-light);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+
+      img{
+        max-height: 1.75rem;
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
-
+/src/assets/favicon.png
+/src/assets/JabilLogoBlack.svg
 # compiled output
 /dist
 /tmp

@@ -1,0 +1,72 @@
+<div class="container">
+  <section class="examples">
+    <div>
+      <p>Colors</p>
+      <p>Rounded</p>
+      <p>Square</p>
+      <p>Outline</p>
+      <span class="col-1">
+        <app-button>Primary</app-button>
+        <app-button [color]="'secondary'">Secondary</app-button>
+        <app-button [color]="'success'">Success</app-button>
+        <app-button [color]="'dark'">Dark</app-button>
+        <app-button [color]="'info'">Info</app-button>
+        <app-button [color]="'warning'">Warning</app-button>
+        <app-button [color]="'danger'">Danger</app-button>
+      </span>
+      <span class="col-2">
+        <app-button [border]="'rounded'">Primary</app-button>
+        <app-button [border]="'rounded'" [color]="'secondary'">Secondary</app-button>
+        <app-button [border]="'rounded'" [color]="'success'">Success</app-button>
+        <app-button [border]="'rounded'" [color]="'dark'">Dark</app-button>
+        <app-button [border]="'rounded'" [color]="'info'">Info</app-button>
+        <app-button [border]="'rounded'" [color]="'warning'">Warning</app-button>
+        <app-button [border]="'rounded'" [color]="'danger'">Danger</app-button>
+      </span>
+      <span class="col-3">
+        <app-button [border]="'square'">Primary</app-button>
+        <app-button [border]="'square'" [color]="'secondary'">Secondary</app-button>
+        <app-button [border]="'square'" [color]="'success'">Success</app-button>
+        <app-button [border]="'square'" [color]="'dark'">Dark</app-button>
+        <app-button [border]="'square'" [color]="'info'">Info</app-button>
+        <app-button [border]="'square'" [color]="'warning'">Warning</app-button>
+        <app-button [border]="'square'" [color]="'danger'">Danger</app-button>
+      </span>
+      <span class="col-4">
+        <app-button [outline]="true">Primary</app-button>
+        <app-button [outline]="true" [color]="'secondary'">Secondary</app-button>
+        <app-button [outline]="true" [color]="'success'">Success</app-button>
+        <app-button [outline]="true" [color]="'dark'">Dark</app-button>
+        <app-button [outline]="true" [color]="'info'">Info</app-button>
+        <app-button [outline]="true" [color]="'warning'">Warning</app-button>
+        <app-button [outline]="true" [color]="'danger'">Danger</app-button>
+      </span>
+    </div>
+    <div>
+      <p>Size</p>
+      <p>Rounded</p>
+      <p>Square</p>
+      <p>Outline</p>
+      <span class="col-1">
+        <app-button [size]="'small'">Small</app-button>
+        <app-button>Normal</app-button>
+        <app-button [size]="'large'">Large</app-button>
+      </span>
+      <span class="col-2">
+        <app-button [border]="'rounded'" [size]="'small'">Small</app-button>
+        <app-button [border]="'rounded'">Normal</app-button>
+        <app-button [border]="'rounded'" [size]="'large'">Large</app-button>
+      </span>
+      <span class="col-3">
+        <app-button [border]="'square'" [size]="'small'">Small</app-button>
+        <app-button [border]="'square'">Normal</app-button>
+        <app-button [border]="'square'" [size]="'large'">Large</app-button>
+      </span>
+      <span class="col-4">
+        <app-button [outline]="true" [size]="'small'">Small</app-button>
+        <app-button [outline]="true">Normal</app-button>
+        <app-button [outline]="true" [size]="'large'">Large</app-button>
+      </span>
+    </div>
+  </section>
+</div>

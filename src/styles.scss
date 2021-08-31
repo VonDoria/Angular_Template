@@ -1,1 +1,91 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/theming';
+@include mat-core();
+
+$mat-primary-scheme: (
+  100: #6c757d,
+  500: #003865,
+  700: #002b49,
+  contrast: (
+    100: rgba(0,0,0,0.87),
+    500: #ffffff,
+    700: #ffffff,
+  )
+);
+$mat-accent-scheme: (
+  100: #ffe57f,
+  500: #ffd740,
+  700: #ffc400,
+  contrast: (
+    100: rgba(0,0,0,0.87),
+    500: rgba(0,0,0,0.87),
+    700: #ffffff,
+  )
+);
+$mat-primary-palette: mat-palette($mat-primary-scheme);
+$mat-accent-palette: mat-palette($mat-accent-scheme);
+
+$app-light-theme: mat-light-theme($mat-primary-palette, $mat-accent-palette);
+
+@include angular-material-theme($app-light-theme);
+
+// following section is for dark mode.
+// use appropriate class name for darkMode
+$app-dark-theme: mat-dark-theme($mat-primary-palette, $mat-accent-palette);
+.darkMode {
+  @include angular-material-theme($app-dark-theme);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root {
+
+  --primary: #003865;
+  --primary-dark: #002b49;
+  --secondary: #6c757d;
+
+  --dark: #343a40;
+  --danger: #c84837;
+  --warning: #e28118;
+  --success: #3bb56e;
+  --info: #007bff;
+
+  --background: #f5f5f5;
+  --background-light: #fff;
+
+  --dark-text: #373737;
+  --text: #373737;
+  --light-text: #fff;
+
+  --placeholder: #6c757d;
+
+  --cyan: #1aae9f;
+  --light-cyan: #a8e0db;
+  --blue: #2c88d9;
+  --light-blue: #84bae9;
+  --red: #d3455b;
+  --pink: #e5929f;
+
+  --white: #fff;
+  --gray: #ccc;
+  --light-gray: #f9f9f9;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato",-apple-system,Arial,sans-serif;
+  transition: .5s ease;
+  letter-spacing: 1px;
+}
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+}
+
+a{
+  color: inherit;
+  text-decoration: inherit;
+}

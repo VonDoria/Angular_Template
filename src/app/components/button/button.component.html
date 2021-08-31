@@ -1,0 +1,5 @@
+<button
+  (click)="clickEvent()"
+  [ngClass]="size + ' ' + border + ' ' + (outline ? 'OL_' : '') + color">
+  <ng-content></ng-content>
+</button>
